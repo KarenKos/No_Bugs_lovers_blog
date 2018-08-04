@@ -44,10 +44,30 @@ p {
 /*sidebar*/
 .container
 {
-    width: 100%;
+    
+    margin: 0 75px;
     display: flex;
+    justify-content: center;
 }
 
+
+#sidebar
+{
+    margin-left: 40px;
+    width: 180vw;
+}
+
+.about
+{
+    margin:0;
+    
+}
+
+.top
+{
+    font-family: var(--secondaryFont);
+    font-size: 14px;
+}
 
 
 a:link, a:visited
@@ -69,27 +89,27 @@ a:link, a:visited
 }
 
 
-ol
+ol.sblist
 {
     padding: 0;
     list-style-type: none;
     list-style-position: inside;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-ol> li::before
+ol.sblist> li::before
 {
     content: "• ";
     color: gray;
     margin-right: 30px;
 }
 
-ol>li
+ol.sblist>li
 {
     margin-bottom: 15px;
 }
 
-ol>li>ul
+ol.sblist>li>ul.cmlist
 {
     margin-top: 5px;
     list-style-type: none;
