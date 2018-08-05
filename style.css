@@ -13,6 +13,7 @@
 body {
     color: var(--fontColor);
     background-color: var(--primaryBackgroundColor);
+    
 }
 
 h1 {
@@ -37,8 +38,98 @@ p {
     font-family: var(--primaryFont);
     font-style: italic;
 }
-/*Menu*/
 
+/*Menu*/
+#wrapper{
+    widows: 100%;
+    box-sizing: border-box;
+}
+#menu{
+    width: 100%; 
+    font-family: var(--primaryFont);
+    text-align: center;
+    color: var(--fontColor);
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    margin: 50px 30px;
+} 
+
+#logo{
+    font-family: var(--secondaryFont);
+    font-size: 40px;
+    text-align: left;
+}
+
+.nav{
+    width: 100%;
+    font-family: var(--primaryFont);
+    text-align: center;
+    color: var(--fontColor);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_style{
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+ol{
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    display: inline-block; 
+    text-align: center;   
+}
+
+ol a{
+    text-decoration: none;
+    display: block; 
+    color: var(--fontColor); 
+}
+
+ol > li {
+    float: left;
+    width: 200px;
+    height: 30px;  
+}
+
+ol > li:hover{
+    background-color:  #f1f1f1;
+    border-radius: 5px;
+}
+
+ol > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;  
+} 
+
+ol > li:hover > ul {
+    display: block;
+    z-index: 100;   
+}
+
+ol > li > ul > li {
+    background-color: var(--secondaryBackgroundColor);
+    position: relative;
+    border-radius: 5px;
+    margin-top: 7px;
+    z-index: 10;
+}
+
+ol > li > ul > li:hover {
+    background-color: var(--secondaryBackgroundColor);
+}
+
+ol > li > ul > li:hover > a {
+    color: #7f7f7f;
+}
 /*header*/
 
 /*sidebar*/
@@ -120,11 +211,164 @@ ol.sblist>li>ul.cmlist
 /*comments*/
 
 /*footer*/
+#footer{
+    width:100%;
+    background-color: rgb(233, 227, 227);
+    color:black;
+    margin:0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
 
+}
+
+.fright{
+    display: flex;
+    float: right;
+    padding-right:100px;
+}
+
+.fleft{
+     padding-left: 100px;
+}
+.nav{
+    display: flex;
+}
+
+.fab{
+    
+    font-size: 30px;
+    margin: 0 20px 0 20px;
+    color: grey;
+}
+
+.first{
+    margin-left:10px;
+}
+ 
+p1{
+    padding-right: 50px;
+}
+p2{
+    padding-right: 20px;
+}
+
+@media (max-width:740px){
+    #footer{width:75%;
+            font-size: 15px;
+            flex-wrap: wrap;}
+
+    .fright{padding-right: 50px;
+            }
+    .fleft{padding-left: 50px;}
+
+    .fab{font-size: 20px;
+         margin: 0 15px 0 15px;
+         }
+    p1{padding-right: 30px;
+       }
+     p2{ padding-right: 15px;
+        }
+}
+
+
+@media (max-width:500px){
+    #footer{width:50%;
+            font-size: 10px;
+            flex-wrap: wrap;}
+
+    .fright{padding-right: 25px;
+            }
+    .fleft{padding-left: 25px;}
+
+    .fab{font-size: 10px;
+         margin: 0 10px 0 10px;
+         }
+    p1{padding-right: 15px;
+       }
+     p2{ padding-right: 10px;
+        }
+}
 /*latest posts*/
 
 /*newsletter*/
+#newsletter{
+    width:100%;
+    background-color: rgb(233, 227, 227);
+    color:black;
+    margin:0px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
 
+}
+
+#text{
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+input{
+    width:390px;
+    background-color: rgb(233, 227, 227);
+    border:0;
+    border-bottom: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.demo-icon{
+    color: gray;
+}
+
+@media (max-width:740px){
+    #newsletter{width:75%;
+               }           
+    #text{
+            font-size: 25px;
+            padding-top: 40px;
+            padding-bottom: 10px;
+         }
+    input{
+            width:270px;
+            border:0;
+            border-bottom: 1px solid black;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 50px;
+        }
+    } 
+
+
+        @media (max-width:500px){
+            #newsletter{width:50%;
+                       }
+             #text{
+                        font-size: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 7px;
+                     }
+            input{
+                        width:150px;
+                        border:0;
+                        border-bottom: 1px solid black;
+                        padding-top: 10px;
+                        padding-bottom: 5px;
+                        margin-bottom: 10px;
+                    }
+             ::placeholder{
+                        font-size: 10px;
+                        
+                        }
+        }
 /*you may also like*/
 
 /*contact*/
