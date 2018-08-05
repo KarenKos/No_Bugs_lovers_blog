@@ -39,7 +39,7 @@ p {
     font-style: italic;
 }
 
-/*Menu*/
+/*Menu*//*Header*/
 #wrapper{
     widows: 100%;
     box-sizing: border-box;
@@ -51,7 +51,6 @@ p {
     color: var(--fontColor);
     position: relative;
     display: flex;
-    box-sizing: border-box;
     margin: 50px 30px;
 } 
 
@@ -59,10 +58,11 @@ p {
     font-family: var(--secondaryFont);
     font-size: 40px;
     text-align: left;
+    width: calc(20%);
 }
 
 .nav{
-    width: 100%;
+    width: calc(80%);
     font-family: var(--primaryFont);
     text-align: center;
     color: var(--fontColor);
@@ -130,6 +130,40 @@ ol > li > ul > li:hover {
 ol > li > ul > li:hover > a {
     color: #7f7f7f;
 }
+@media (max-width:1000px){
+    #logo{
+        font-size: 20px;
+    }
+    ol > li{
+        width: 75px;
+        height: 20px;
+    }
+    ol{
+        font-size: 14px;
+        height: 24px;
+    }
+    #menu{
+        margin: 25px 15px;
+    }
+}
+
+
+@media (max-width:500px){
+    #logo{
+        font-size: 15px;
+    }
+    ol > li{
+        width: 75px;
+        height: 15px;
+    }
+    ol{
+        font-size: 10px;
+        height: 18px;
+    }   
+    #menu{
+        margin: 20px 12px;
+    }
+}
 /*header*/
 
 /*sidebar*/
@@ -180,7 +214,7 @@ p2{
     padding-right: 20px;
 }
 
-@media (max-width:740px){
+@media (max-width:750px){
     #footer{width:75%;
             font-size: 15px;
             flex-wrap: wrap;}
@@ -194,7 +228,7 @@ p2{
          }
     p1{padding-right: 30px;
        }
-     p2{ padding-right: 15px;
+    p2{ padding-right: 15px;
         }
 }
 
@@ -215,6 +249,7 @@ p2{
        }
      p2{ padding-right: 10px;
         }
+    
 }
 /*latest posts*/
 
