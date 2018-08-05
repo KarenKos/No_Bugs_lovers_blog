@@ -13,7 +13,8 @@
 body {
     color: var(--fontColor);
     background-color: var(--primaryBackgroundColor);
-    
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
