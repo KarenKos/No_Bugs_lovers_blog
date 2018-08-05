@@ -52,18 +52,20 @@ p {
     color: var(--fontColor);
     position: relative;
     display: flex;
-    margin: 50px 30px;
+    margin: 50px 0;
+    
 } 
 
 #logo{
     font-family: var(--secondaryFont);
     font-size: 40px;
     text-align: left;
-    width: calc(20%);
+    width: calc(10%);
+    margin-left: 30px;
 }
 
 .nav{
-    width: calc(80%);
+    width: calc(90%);
     font-family: var(--primaryFont);
     text-align: center;
     color: var(--fontColor);
@@ -94,8 +96,9 @@ ol a{
 
 ol > li {
     float: left;
-    width: 200px;
-    height: 30px;  
+    width: 120px;
+    height: 30px;
+    margin-right: 30px; 
 }
 
 ol > li:hover{
@@ -144,25 +147,25 @@ ol > li > ul > li:hover > a {
         height: 24px;
     }
     #menu{
-        margin: 25px 15px;
+        margin: 25px 0;
     }
 }
 
 
-@media (max-width:500px){
+@media (max-width:700px){
     #logo{
-        font-size: 15px;
+        font-size: 12px;
     }
     ol > li{
-        width: 75px;
+        width: 35px;
         height: 15px;
     }
     ol{
-        font-size: 10px;
+        font-size: 8px;
         height: 18px;
     }   
     #menu{
-        margin: 20px 12px;
+        margin: 20px 0;
     }
 }
 /*header*/
@@ -244,6 +247,69 @@ ol.sblist>li>ul.cmlist
 }
 
 /*comments*/
+.comments{
+   margin: 0 50px;
+}
+
+form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input[type=submit]{
+    width: 150px;
+    margin-top: 15px;
+    background-color: #dbdbdb;
+    color: var(--fontColor);
+    font: var(--secondaryFont);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    box-sizing: border-box;    
+}
+
+input[type=submit]:hover{
+    background-color: #cccccc;
+}
+
+textarea{
+    width: 750px;
+    font: var(--secondaryFont);
+    color: var(--fontColor);
+    border: 1px solid #dbdbdb;
+}
+
+input[type=text]{
+    width: 400px;
+    background-color: #f5f5f5;
+    border: 2px solid #dbdbdb;
+    font: var(--secondaryFont);
+    color: var(--fontColor);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+input[type=text]:focus,
+input[type=submit]:focus,
+textarea:focus{
+    -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
 
 /*footer*/
 #footer{
