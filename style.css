@@ -329,6 +329,79 @@ p2{
 }
 /*latest posts*/
 
+.grid {
+     
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-auto-rows: minmax(70%, auto);
+  grid-gap: 1em;
+  margin: auto;
+  max-width: 65em;
+  min-height: 45em;
+  
+}
+
+.newpost {
+  
+  background: #eaeaea;
+  display:block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  flex: 1 1 1;
+}
+
+.newpost:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.post_img {
+    
+    width: 100%;
+    height: 30vh; 
+    text-align: center;
+
+}
+
+.post_img > img {
+    
+    width: 100%;
+    height: 100%; 
+
+}
+
+h3 {  /* Tutaj znajduje się h3, które chyba dobrze byłoby przenieść do góry, pod h1 */
+    font-family: var(--primaryFont);
+    font-weight: 400;
+    font-size: 1.2em;
+
+}
+
+ a {
+    color: var(--fontColor);
+    text-decoration: none;
+}
+
+.meta {
+    font-family: var(--secondaryFont);
+    font-size: 0.9em;
+    margin-left: 5%;
+    margin-top: 5px;
+    
+}
+
+
+.post_content {
+    
+    width: 98%;
+    height: 42%;
+    padding: 2%;
+    margin-top: 0;
+
+}
+
 /*newsletter*/
 #newsletter{
     width:100%;
