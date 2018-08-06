@@ -443,15 +443,13 @@ input{
          }
     input{
             width:270px;
-            border:0;
-            border-bottom: 1px solid black;
-            padding-top: 20px;
             padding-bottom: 15px;
             margin-bottom: 50px;
         }
 
     }
-        @media (max-width:500px){
+
+ @media (max-width:500px){
           
              #text{
                         font-size: 15px;
@@ -460,8 +458,6 @@ input{
                      }
             input{
                         width:150px;
-                        border:0;
-                        border-bottom: 1px solid black;
                         padding-top: 10px;
                         padding-bottom: 5px;
                         margin-bottom: 10px;
@@ -470,7 +466,7 @@ input{
                         font-size: 10px;
                         
                         }
-                    }
+ }
 
 /*you may also like*/
 
