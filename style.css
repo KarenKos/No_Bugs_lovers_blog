@@ -171,7 +171,7 @@ ol > li > ul > li:hover > a {
 .container
 {
     
-    margin: 0 75px;
+    margin: 20px 75px 70px 75px;
     display: flex;
     justify-content: center;
 }
@@ -187,12 +187,6 @@ ol > li > ul > li:hover > a {
 {
     margin:0;
     
-}
-
-.top
-{
-    font-family: var(--secondaryFont);
-    font-size: 14px;
 }
 
 
@@ -215,32 +209,49 @@ a:link, a:visited
 }
 
 
-ol.sblist
+.top
 {
-    padding: 0;
-    list-style-type: none;
-    list-style-position: inside;
-    font-size: 16px;
+    font-family: var(--secondaryFont);
+    font-size: 14px;
 }
 
-ol.sblist> li::before
+.topp::before
 {
     content: "• ";
     color: gray;
     margin-right: 30px;
 }
 
-ol.sblist>li
+.topp
 {
-    margin-bottom: 15px;
+    font-family: (var(--primaryFont));
+}
+.comm
+{
+    font-size: 12px;
+    color:gray;
+    margin-left: 38px;
+    margin-bottom: 20px;
 }
 
-ol.sblist>li>ul.cmlist
+
+@media (max-width:740px)
 {
-    margin-top: 5px;
-    list-style-type: none;
-    font-size: 13px;
-    color: gray;
+    #sidebar
+    {
+        width: 30%;
+    }
+
+    .about
+    {
+        font-size: 11px;
+    }
+
+    .top
+    {
+        font-size: 80%;
+    }
+
 }
 
 /*comments*/
@@ -480,6 +491,51 @@ input{
                         }
         }
 /*you may also like*/
+.ymal
+{
+    width: 100%;
+    background-color: rgb(233, 227, 227);
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#like
+{
+    text-align: left;
+    font-family: var(--secondaryFont);
+    color: gray;
+    margin: 30px 0;
+}
+
+
+.sugs
+{
+    display:flex;
+    justify-content: space-evenly;
+    font-family: var(--primaryFont);
+    margin: 0 3px 0 0;
+}
+
+.sug1, .sug2
+{
+    margin: 0 30px 30px 0;
+}
+
+
+
+@media (max-width:750px)
+{
+    #like
+    {
+    padding-left: 5%
+    }
+    .sugs
+    {
+        flex-wrap: wrap;
+    }
+}
+
 
 /*contact*/
 
