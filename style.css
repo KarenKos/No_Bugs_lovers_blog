@@ -435,8 +435,7 @@ input{
 }
 
 @media (max-width:740px){
-    #newsletter{width:75%;
-               }           
+        
     #text{
             font-size: 25px;
             padding-top: 40px;
@@ -450,12 +449,10 @@ input{
             padding-bottom: 15px;
             margin-bottom: 50px;
         }
-    } 
 
-
+    }
         @media (max-width:500px){
-            #newsletter{width:50%;
-                       }
+          
              #text{
                         font-size: 15px;
                         padding-top: 10px;
@@ -473,7 +470,8 @@ input{
                         font-size: 10px;
                         
                         }
-        }
+                    }
+
 /*you may also like*/
 
 /*contact*/
