@@ -67,17 +67,53 @@
         </p>
 
 
+    <div id=adressandcontact>
+        <!--Adress-->
     
-      <!--Adress-->
-
-
-      <!--Maps-->
+        <div id="adress">
+            <div id="text">Visit us</div>
+            Komandorska 159
+            <br/>57-323 Wrocław
+            <br/> Poland
+        </div>
+        <!--formularz kontaktowy-->
+        <div class="contact_box">
+            <div id="text">Contact us</div>
+            <form>
+                <div class="input_field">
     
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="mailadress" name="mailadress" placeholder="Your e-mail adress..">
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    
+    
+    <!--Maps-->
+    <div id="map_container">
+    
+        <div id="map"></div>
+    
+        <script>
 
-       <!--formularz kontaktowy-->
+            function initMap() {
 
+                var us = { lat: 51.091, lng: 17.023 };
 
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 14, center: us });
 
+                var marker = new google.maps.Marker({ position: us, map: map });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaUZWdH0nFdqLF4HoRqsMhBAYFsosyZjU&callback=initMap">
+        </script>
+    </div>
+    
         </section>
     <!--Sidebar-->
     <aside id="sidebar">

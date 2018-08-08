@@ -500,6 +500,7 @@ input{
     padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 70px;
+    outline: none; /* Zmiana */
 }
 
 ::placeholder{
@@ -593,4 +594,92 @@ input{
 
 
 /*contact*/
+#adressandcontact {
+display: flex;
+padding: 2%;
+width:98%;
 
+}
+
+#adress {
+justify-content: center;
+width:46%;
+padding: 2%;
+text-align: center;
+font-size: 1.5em;
+border-bottom: 1px solid black;
+margin-right: 2%;
+}
+
+.contact_box {    
+border-bottom: 1px solid black;
+    padding: 2%;
+    width:46%;
+    margin-left: 2%;
+    color:black;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+
+}
+
+.input_field > input {
+    width:90%;
+    background-color: var(--primaryBackgroundColor)
+    border:0;
+    border-bottom: 1px solid black;
+    padding:1%;
+    margin-bottom: 3%;
+}
+
+.input_field > input:focus{
+background-color: rgb(233, 227, 227);
+}
+
+
+textarea{
+    width:90%;
+    min-height: 100px;
+    background-color: var(--primaryBackgroundColor)
+    outline:none;
+    resize: none;
+    margin-bottom: 3%;
+}
+
+textarea:focus{
+background-color: rgb(233, 227, 227);
+
+}
+
+input[type=submit] {
+    width: 50%;    
+    height: 25%;
+    border: 1px solid black;
+    padding: 1%;    
+    margin-bottom: 1%;
+    font-style: var(--primaryFont);
+    
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+input[type=submit]:active{
+    background-color:  #3a3a3a;
+    color:  rgb(233, 227, 227);
+}
+
+/*Map*/
+
+#map_container {    
+    width:98%;
+    padding: 2%;
+     margin-bottom: 4%;
+}
+
+
+#map {
+ width: 100%;
+ min-height: 300px; 
+border: 1px solid black;
+}
